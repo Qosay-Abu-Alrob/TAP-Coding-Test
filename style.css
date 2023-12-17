@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+:root {
+    --first-color: #D1884F;
+    --second-color: #008AAA;
+    --third-color: #3BBADB;
+  }
+nav{
+  display: flex;
+  justify-content:flex-end;
+}
+nav > ul{
+  display: flex;
+}
+nav > ul > li{
+  display: flex;
+  justify-content: space-evenly; 
+  margin-right: 4vw;
+}
+nav > ul > li >i{
+  margin-right: 1vw;
+}
+nav > ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+nav > ul > li:first-child{
+  color: var(--first-color);
+}
+header nav ul li:first-child a {
+  color: var(--first-color)
+}
+header{
+  margin-bottom: 8%;
+}
+.welcome{
+  color: var(--third-color);
+  font-size: 1.5rem;
+}
+.howIam{
+  color: var(--second-color);
+  width: 110%;
+  font-size: 3rem;
+}
+span{
+  color: var(--first-color);
+}
+.content{
+  width: 28%;
+}
+.study{
+  font-weight:bolder;
+}
+.seeMore{
+  text-decoration: none;
+  color: var(--third-color);
+}
+img{
+  width: 25vw;
+  height: 40vh;
+  margin-left: 40%;
+}
+.region{
+  display: flex;
+  justify-content: space-evenly;
+}
+.button{
+  margin-top: 2%;
+  margin-left: 15%;
+}
+.button button{
+  margin-right: 5%;
+  
+}
+.button button:first-child{
+  background-color: var(--second-color);
+  color: white;
+  width: 8%;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8%;
+}
+.button button:nth-child(2){
+  background-color:white ;
+  color:var(--third-color) ;
+  width: 12%;
+  font-size: 1.1rem;
+  border-style:solid ;
+  border-color: var(--third-color);
+  border-radius: 8%;
+}
+@media (max-width: 1500px) {
+  img{
+    width: 25vw;
+    height: 35vh;
+  }
+  }
+@media (max-width: 1375px) {
+  .button button:nth-child(2){
+    width: 15%;
+  }
+  .button button:first-child{
+    width: 15%;
+  }
+}
+@media (max-width: 1200px) {
+  .button button:nth-child(2){
+    width: 20%;
+  }
+  .button button:first-child{
+    width: 20%;
+  }
+  img{
+    width: 30vw;
+    height: 30vh;
+  }
+  .howIam{
+    width: 110%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .button button:nth-child(2){
+    width: 30%;
+  }
+  .button button:first-child{
+    width: 23%;
+  }
+  img{
+    width: 30vw;
+    height: 20vh;
+  }
+  .howIam{
+    font-size: 1.2rem;
+  }
+  .welcome{
+    font-size: 0.9rem;
+  }
+  .study{
+    width: 160%;;
+  }
+}
+@media (max-width: 620px) {
+  .button button:nth-child(2){
+    width: 40%;
+  }
+  .button button:first-child{
+    width: 30%;
+  }
+  img{
+    width: 30vw;
+    height: 15vh;
+  }
+  .howIam{
+    font-size: 0.8rem;
+  }
+  .welcome{
+    font-size: 0.7rem;
+  }
+  .study{
+    width: 160%;;
+  }
+}
+/*-------------------*/
+@media (max-width: 550px) {
+  nav{
+    display: flex;
+    justify-content:center;
+  }
+  .region{
+    display: block;
+  }
+  .content{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .button button:nth-child(2){
+    width: 30%;
+    font-size: 0.8rem;
+  }
+  .button button:first-child{
+    width: 30%;
+    font-size: 0.8rem;
+  }
+  img{
+    width: 40vw;
+    height: 25vh;
+    margin-left: 30%;
+  }
+  .image{
+    width: 100%;
+    margin: 20px auto;
+  }
+  .howIam{
+    font-size: 0.8rem;
+  }
+  .welcome{
+    font-size: 0.8rem;
+  }
+  .study{
+    width: 100%;
+  }
+  .button{
+    margin-left: 26%;
+  }
+}
+@media (max-width: 432px) {
+  
+  nav{
+    display: flex;
+    justify-content:flex-start;
+  }
+  .content{
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .button button:nth-child(2){
+    width: 35%;
+    font-size: 0.7rem;
+  }
+  img{
+    width: 40vw;
+    height: 15vh;
+    margin-left: 30%;
+  }
+}
+
+
